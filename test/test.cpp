@@ -23,7 +23,3 @@ TEST(ControllerComputeTest_increasing, should_pass) {
 TEST(ControllerComputeTes_decreasing, should_pass) {
   EXPECT_NEAR(PIDController.RunController(20, 10), 20, 0.1);
 }
-
-TEST(ControllerReturnDtTest, should_pass) {
-  EXPECT_GT(PIDController.returndt(), 0);
-}
